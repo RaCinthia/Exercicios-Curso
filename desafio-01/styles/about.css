@@ -1,0 +1,159 @@
+.main-content {
+    display: flex;
+    justify-content: end;
+    padding: 1.2rem 2.5rem 1.2rem 2rem;
+}
+
+.about__container {
+    width: 73%;
+    display: flex;
+    flex-direction: column;
+    grid-area: about;
+}
+
+.section__container {
+    margin-bottom: 2rem;
+    display: flex;
+}
+
+.section__container p {
+    padding-bottom: 4px;
+}
+
+.description {
+    text-align: justify;}
+
+.section__container .subtopic {
+    padding: 0 0 6px 0;
+    font-size: 13px;
+}
+
+.section__content {
+    width: 92.5%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 22px;
+}
+
+.section__decoration__profile,
+.section__decoration__education,
+.section__decoration__projects,
+.section__decoration__achievements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.section__decoration__profile::after {
+    content: '';
+    background-color: var(--blue);
+    width: 5px;
+    height: 5px;
+    border: 2px solid var(--blue);
+    background-color: var(--white);
+    position: absolute;
+    top: 60%;
+}
+
+.subtopic__decoration {
+    position: relative;
+}
+
+.subtopic__decoration::before {
+    content: '';
+    background-color: var(--blue);
+    width: 5px;
+    height: 5px;
+    border: 2px solid var(--blue);
+    background-color: var(--white);
+    position: absolute;
+    top: 10%;
+    left: -39px;
+}
+
+.section__decoration__education::after {
+    top: 22.5%;
+}
+
+/* .section__decoration__education::before {
+    top: 60%;
+} */
+
+.section__decoration__icon {
+    width: 25px;
+    height: 25px;
+    background-color: var(--blue);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.profile {
+    background-image: url(../assets/person-icon.png);
+}
+
+.education {
+    background-image: url(../assets/education-icon.png);
+}
+
+.projects {
+    background-image: url(../assets/projects-icon.png);
+}
+
+.achievements {
+    background-image: url(../assets/achievements-icon.png);
+}
+
+.section__decoration__line {
+    width: 1.8px;
+    flex-grow: 1;
+    background-color: var(--blue);
+}
+
+
+
+/* @media screen and (max-width: 1920px) {
+    
+    .about__container {
+        width: 70%;
+    }
+
+} */
+
+.inline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.emphasis {
+    font-weight: bold;
+    color: var(--blue);
+}
+
+.italic {
+    font-style: italic;
+}
+
+.gap {
+    gap: 10px;
+}
+
+
+@media print {
+
+    .about__container {
+        width: 68%;
+    }
+
+    .section__content {
+        width: 90.5%;
+    }
+
+}

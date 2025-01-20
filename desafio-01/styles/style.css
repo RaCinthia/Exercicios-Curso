@@ -1,0 +1,70 @@
+@import url(header.css);
+@import url(aside.css);
+@import url(about.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis CSS */
+:root {
+    --blue: #3a82b3;
+    --light-blue: #dfeef8;
+    --gray: #e5e5e5;
+    --white: #ffffff;
+    --principal-font: Arial, sans-serif;
+}
+
+body {
+    font-family: var(--principal-font);
+    font-size: 12px;
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--light-blue);
+}
+
+.body__container {
+    height: 100%;
+    position: relative;
+    background-color: var(--white);
+}
+
+.main-content {
+    display: flex;
+}
+
+
+@media screen and (max-width: 1020px) {
+
+    .body__container {
+        width: 95%;
+    }
+
+}
+
+@media screen and (width > 1400px) {
+
+    .body__container {
+        width: 70%;
+    }
+
+}
+
+@media print {
+
+    body {
+        width: 100%;
+        height: 100vh;
+        background-color: var(--white);
+    }
+
+    .body__container {
+        width: 100%;
+        height: 100vh;
+    }
+
+}

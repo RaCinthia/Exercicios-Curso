@@ -1,0 +1,28 @@
+.student-info {
+    padding: 1.15rem 0;
+}
+
+.student-info__content {
+    background-color: var(--blue);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding: 1.2rem 4rem;
+    width: 100%;
+    height: 11rem;
+    text-transform: uppercase;
+}
+
+.student-info__name {
+    font-size: 2.4rem;
+    padding: .4rem .4rem .4rem 0;
+}
+
+.student-info__graduation {
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: var(--white);
+    opacity: 80%;
+}
