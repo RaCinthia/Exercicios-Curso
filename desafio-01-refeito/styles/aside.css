@@ -1,0 +1,70 @@
+.more-info__container {
+    background-color: var(--gray);
+    color: var(--white);
+    width: 225px;
+    top: 0;
+    left: 2.5%;
+    margin-top: -215px;
+    height: calc(100% + 215px);
+}
+
+.more-info__content {
+    padding: 24px;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.student-info__photo {
+    width: 135px;
+    height: 135px;
+    border: 4px solid var(--blue);
+    margin: 1rem auto 3.45rem auto;
+}
+
+.block__aside {
+    padding-bottom: 32px;
+}
+
+.block__info {
+    gap: 6px;
+    padding: .4rem 0;
+}
+
+.block__info div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.icon {
+    width: 14px;
+    height: 14px;
+    object-fit: cover;
+}
+
+.topic {
+    text-transform: uppercase;
+    color: var(--blue);
+    border-bottom: 1.5px solid var(--blue);
+    letter-spacing: 1px;
+    margin-bottom: .4rem;
+    padding-bottom: 4.5px;
+}
+
+.subtopic {
+    color: var(--blue);
+    font-weight: bold;
+    padding: .3rem 0;
+}
+
+.list {
+    padding-left: 1rem;
+}
+
+.list__item {
+    padding: .25rem 0;
+}

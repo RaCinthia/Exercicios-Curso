@@ -1,0 +1,29 @@
+.header__container {
+    padding: 16px 0;
+    text-transform: uppercase;
+}
+
+.header__content {
+    padding: 4rem;
+    background-color: var(--blue);
+    display: flex;
+}
+
+.space-block {
+    flex-grow: 1;
+}
+
+.name__content {
+    width: 58%;
+}
+
+.header__content h1 {
+    font-size: 2rem;
+    margin-bottom: .2rem;
+}
+
+.header__content p {
+    font-size: .8rem;
+    font-weight: 600;
+    opacity: 65%;
+}

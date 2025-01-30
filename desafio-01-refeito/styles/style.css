@@ -1,0 +1,58 @@
+@import url(./header.css);
+@import url(./aside.css);
+@import url(./above.css);
+
+:root {
+    --principal-font: Arial, sans-serif;
+    --background: #e4f1ff;
+    --white: #ffffff;
+    --blue: #acdaf8;
+    --dark-blue: #2ca83d;
+    --pink: #faabb8;
+    --dark-pink: #ce6173;
+    --gray: #2e2e2e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    /* height: 100vh; */
+    font-family: var(--principal-font);
+    background-color: var(--background);
+    font-size: 12px;
+    /* margin: 100px 0; */
+}
+
+.container {
+    /* A4: 210mm x 297mm == 794px x 1123px */
+    max-width: 794px;
+    /* max-height: 1123px; */
+    height: 1123px;
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+}
+
+.main__container {
+    height: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+a:hover {
+    cursor: pointer;
+    color: var(--pink);
+}
