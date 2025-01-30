@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="index.js" type="module"></script>
+</head>
+<body>
+    <main>
+        <section class="title">
+            <h1>Construindo <span class="marked">páginas dinâmicas</span> com <span class="emphasis">JS</span></h1>
+        </section>
+
+        <section class="container__tasklist">
+            <h2 class="tasklist__title">Lista de Tarefas</h2>
+            <hr>
+            <div class="tasklist__div">
+                <label for="task">
+                    <p>Título:</p>
+                </label>
+                <input type="text" name="task" id="task" class="tasklist__input" placeholder="Insira a nova tarefa">
+            </div>
+            
+            <section class="tasklist__warning">
+                <p class="warning__message">O campo está vazio.</p>
+                <p class="warning__message">Insira um título para a tarefa antes de adicioná-la.</p>
+            </section>
+            
+            <button class="tasklist__button">Adicionar tarefa</button>
+        </section>
+
+        <section class="container__tasklist">
+            <ul class="tasklist__list">
+                <h3 class="tasklist__title">Tarefas</h3>
+            </ul>
+            <section class="tasklist__info-message">
+                <p class="info-message">Você não possui tarefas no momento.</p>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

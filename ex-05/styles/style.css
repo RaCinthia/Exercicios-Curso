@@ -1,0 +1,200 @@
+:root {
+    --background: rgb(249, 234, 250);
+    --principal-font: 'Poppins';
+    --principal-color: rgba(248, 152, 168, 0.514);
+    --secondary-color: rgb(255, 252, 252);
+    --terciary-color: rgb(247, 133, 152);
+    --accent-color: aliceblue;
+    --light-red: rgb(241, 110, 110);
+    --light-gray: rgba(231, 231, 231, 0.507);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background);
+    font-family: var(--principal-font);
+    font-size: 16px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+}
+
+.title > h1 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.marked {
+    background-color: var(--principal-color);
+    padding: 0 .6rem;
+    border-radius: .4rem;
+}
+
+.emphasis {
+    font-weight: 700;
+}
+
+.container__tasklist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    width: 86%;
+    margin: 1rem auto;
+    padding: 2rem;
+    border-radius: .4rem;
+}
+
+.tasklist__title {
+    padding: .8rem 0;
+    text-align: center;
+}
+
+hr {
+    width: 90%;
+    border-color: var(--principal-color);
+}
+
+.tasklist__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .4rem;
+    padding: 2rem 1rem 1rem 1rem;
+    width: 90%;
+}
+
+.tasklist__div p {
+    font-size: 15px;
+}
+
+.tasklist__input {
+    font-family: var(--principal-font);
+    padding: .2rem .4rem;
+    width: 90%;
+}
+
+.tasklist__warning {
+    width: 75%;
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.warning__message {
+    padding: .4rem;
+    margin: 0 0 .6rem 0;
+    font-size: 12px;
+    background-color: var(--light-red);
+    border-radius: .15rem;
+}
+
+.tasklist__button {
+    padding: .4rem 1rem;
+    font-family: var(--principal-font);
+    border-radius: 50px;
+    border: 2px solid var(--terciary-color);
+    background-color: var(--principal-color);
+    cursor: pointer;
+}
+
+.tasklist__button:active {
+    background-color: var(--terciary-color);
+}
+
+.tasklist__list {
+    width: 100%;
+}
+
+.tasklist__item {
+    padding: .8rem;
+    margin: .8rem 0;
+    background-color: var(--accent-color);
+    list-style-type: none;
+    border-radius: .4rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.date {
+    font-size: 12px;
+    opacity: 60%;
+}
+
+.tasklist__info-message {
+    background-color: var(--light-gray);
+    font-size: 12px;
+    padding: .6rem;
+    border-radius: .15rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+    
+    body {
+        font-size: 18px;
+    }
+
+    .title h1 {
+        font-size: 1.8rem;
+    }
+
+    .container__tasklist {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .tasklist__input {
+        width: 60%;
+    }
+
+    .tasklist__div p {
+        font-size: 18px;
+    }
+
+    .tasklist__warning {
+        width: 58%;
+    }
+
+    .tasklist__info-message {
+        width: 58%;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+
+    .container__tasklist {
+        width: 50%;
+    }
+
+    .tasklist__warning {
+        width: 58%;
+    }
+
+    .tasklist__info-message {
+        width: 58%;
+    }
+
+}
