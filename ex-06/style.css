@@ -1,0 +1,54 @@
+:root {
+    --principal-font: "Segoe UI";
+    --pink: pink;
+    --pink-rgb: rgb(255, 192, 203);
+    --middle-pink-rgb: rgb(240, 117, 137);
+    --dark-pink-rgb: rgb(87, 29, 38);
+    --purple-rgb: rgb(200, 141, 255);
+    --middle-purple-rgb: rgb(137, 66, 204);
+    --dark-purple-rgb: rgb(37, 16, 56);
+    --blue-rgb: rgb(141, 177, 255);
+    --middle-blue-rgb: rgb(80, 132, 243);
+    --dark-blue-rgb: rgb(14, 30, 65);
+}
+
+[data-context="focus"] {
+    --main-bg-color: linear-gradient(180deg, var(--pink), var(--middle-pink-rgb), var(--dark-pink-rgb));
+    --bt-color: var(--pink-rgb);
+}
+
+[data-context="short"] {
+    --main-bg-color: linear-gradient(180deg, var(--purple-rgb),var(--middle-purple-rgb), var(--dark-purple-rgb));
+    --bt-color: var(--purple-rgb);
+}
+
+[data-context="long"] {
+    --main-bg-color: linear-gradient(180deg, var(--blue-rgb), var(--middle-blue-rgb), var(--dark-blue-rgb));
+    --bt-color: var(--blue-rgb);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: var(--main-bg-color);
+    min-height: 100vh;
+}
+
+body {
+    min-height: 100vh;
+    font-family: var(--principal-font);
+    background: url("assets/images/pattern.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 200px;
+    border-radius: 20px;
+}

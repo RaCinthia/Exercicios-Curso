@@ -1,0 +1,99 @@
+.main-controls {
+    background-color: rgba(0, 0, 0, 0.253);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px 30px 20px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.controls-button {
+    padding: 10px 14px;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.controls-button:hover {
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.336);
+    color: white;
+}
+
+.main-timer {
+    font-weight: bold;
+    font-size: 58px;
+    margin: 20px 0;
+}
+
+.start {
+    background-color: var(--bt-color);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Toggle */
+
+.toggle {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 0 30px 0;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.toggle-switch {
+    display: inline-block;
+    background: #ccc;
+    border-radius: 1.6rem;
+    width: 55px;
+    height: 28px;
+    position: relative;
+    vertical-align: middle;
+    transition: background 0.25s;
+}
+
+.toggle-switch:before, .toggle-switch:after {
+    content: "";
+}
+
+.toggle-switch:before {
+    display: block;
+    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    transition: left 0.25s;
+}
+
+.toggle:hover .toggle-switch:before {
+    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+}
+
+.toggle-checkbox:checked + .toggle-switch {
+    background: var(--bt-color);
+}
+
+.toggle-checkbox:checked + .toggle-switch:before {
+    left: 28px;
+}
+
+.toggle-checkbox {
+    position: absolute;
+    visibility: hidden;
+}
