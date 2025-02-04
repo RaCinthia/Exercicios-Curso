@@ -1,0 +1,11 @@
+.main-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.main-title {
+    margin-bottom: 30px;
+    font-size: 46px;
+}

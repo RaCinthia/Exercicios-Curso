@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-context="focus">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+    <!-- Links dos arquivos CSS -->
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/controls.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+
+<body>
+    <!-- Conteiner principal -->
+    <main class="main-container">
+        <!-- Conteúdo principal -->
+        <div class="main-content">
+            <section class="main-banner">
+                <h1 class="main-title">Foco</h1>
+                <img src="assets/images/focus.png" id="bannerImg">
+            </section>
+            <!-- Sessão dos controles -->
+            <section class="main-controls">
+                <!-- Botões para trocar o timer -->
+                <div class="buttons">
+                    <button class="controls-button active" id="focus">Foco</button>
+                    <button class="controls-button" id="short">Descanso curto</button>
+                    <button class="controls-button" id="long">Descanso longo</button>
+                </div>
+                <!-- Contador na Tela -->
+                <div class="main-timer"></div>
+                <!-- "Interruptor" da música -->
+                <label class="toggle">
+                    <input class="toggle-checkbox" type="checkbox" id="toggle-music">
+                    <div class="toggle-switch"></div>
+                    <strong>Música</strong>
+                </label>
+                <!-- Botão de Iniciar e Pausar -->
+                <button class="controls-button start">
+                    <span>Começar</span>
+                    <i class="fa-solid fa-play"></i> <!-- Ícone do botão -->
+                </button>
+
+            </section> <!-- main-controls -->
+
+        </div> <!-- main-content -->
+
+    </main> <!-- main-container -->
+    
+</body>
+
+<script src="index.js" type="module"></script>
+
+</html>
