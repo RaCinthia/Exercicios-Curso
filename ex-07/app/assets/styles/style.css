@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --principal-font: "Nunito";
+    --light-blue: rgb(128, 189, 250);
+    --blue: rgb(75, 160, 245);
+    --dark-blue: rgb(16, 105, 194);
+    --gray: rgba(207, 207, 207, 0.493);
+}
+
+/* GLOBAL */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--principal-font);
+}
+
+/* MAIN */
+
+.main-content {
+    max-height: 75%;
+    /* min-height: 50%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.main-title {
+    padding-bottom: 8px;
+}
+
+.main-paragraph {
+    opacity: .6;
+}
+
+.emphasis {
+    color: var(--dark-blue);
+    position: relative;
+}
+
+.emphasis:hover::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--dark-blue);
+    border-radius: 2px;
+    animation: bottom-line .4s ease-in-out;
+}
+
+/* CONTROLES - BOTÃO E SELECT */
+
+.controls-button {
+    padding: 8px 10px;
+    margin: 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+}
+
+.controls-button:active {
+    scale: .8;
+}
+
+.controls-button:hover {
+    cursor: pointer;
+    animation: colors 2s infinite ease-in-out;
+}
+
+#breed-select {
+    padding: 4px 8px;
+    font-family: var(--principal-font);
+    font-size: 14px;
+}
+
+/* KEYFRAMES - ANIMAÇÕES */
+
+@keyframes bottom-line {
+
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+
+}
+
+@keyframes colors {
+
+    0% {
+        background-color: var(--light-blue);
+    }
+    45% {
+        background-color: var(--blue);
+    }
+    65% {
+        background-color: var(--dark-blue);
+    }
+    100% {
+        background-color: var(--light-blue);
+    }
+
+}

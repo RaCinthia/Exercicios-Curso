@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 07</title>
+    <link rel="stylesheet" href="app/assets/styles/style.css"> 
+    <link rel="stylesheet" href="app/assets/styles/card.css">
+    <link rel="stylesheet" href="app/assets/styles/post.css">
+</head>
+<body>
+    
+    <!-- Conteúdo principal-->
+    <main class="main-content">
+        <!-- Título e subtítulo -->
+        <div class="main-header">
+            <h1 class="main-title">Gatopedia - a enciclopédia de gatos</h1>
+            <span class="main-paragraph">Clique em <span class="emphasis">procurar</span> ou <span class="emphasis">escolha</span> uma raça...</p>
+        </div>
+        <!-- Post de imagens aleatórias de gatinhos -->
+        <section class="post-container"></section>
+        <!-- Raças de gatos -->
+        <section class="breeds-card"></section>
+        <!-- Botões de ação -->
+        <div class="main-controls">
+            <button class="controls-button" onclick="search()">Procurar</button>
+            <select id="breed-select" onchange="setData(value)">
+                <option value="0">Escolha uma raça</option>
+            </select>
+        </div>
+
+    </main>
+    <!-- Scripts -->
+    <script src="app/scripts/main.js" type="module"></script>
+
+</body>
+</html>

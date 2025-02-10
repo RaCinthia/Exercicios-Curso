@@ -1,0 +1,49 @@
+.post-content {
+    padding: 25px 25px 10px 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: var(--gray);
+}
+
+.post-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.post-buttons {
+    width: 100%;
+    padding-top: 10px;
+    position: relative;
+}
+
+.like {
+    width: 35px;
+    height: 35px;
+}
+
+.like:hover {
+    cursor: pointer;
+}
+
+.heart-animate {
+    animation: heart-animate .3s;
+}
+
+@keyframes heart-animate {
+
+    0% {
+        scale: 1;
+    }
+    50% {
+        scale: 1.5;
+    }
+    100% {
+        scale: 1;
+    }
+
+}
