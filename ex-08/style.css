@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282828;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-image {
+    margin: 8px;
+}
+
+.preview{
+    margin: 24px;
+}
+
+.image-name {
+    padding: 10px;
+    font-size: 12px;
+    opacity: .8;
+    font-family: 'Segoe UI';
+    color: white;
+    background-color: #303030;
+}
+
+button {
+    width: 190px;
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid dodgerblue;
+    background-color: transparent;
+    color: rgb(202, 231, 255);
+}
+
+button,.image-name:hover {
+    cursor: pointer;
+}
