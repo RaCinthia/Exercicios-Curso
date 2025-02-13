@@ -25,3 +25,37 @@ Aqui estão os exercícios de fixação, com conteúdos para reforçar a aprendi
 <ul>
   <li>Ocultar e mostrar elementos com HTML e CSS.</li>
 </ul>
+
+### 📜 Exercício 05
+<ul>
+  <li>DOM - Document Object Model.</li>
+  <li>Modularização de código - Importação, Exportação.</li>
+</ul>
+
+### ⏱️ Exercício 06
+<ul>
+  <li>Elemento de áudio - JS.</li>
+  <li>Contador de tempo.</li>
+  <li>Troca de contexto em uma página com JS.</li>
+</ul>
+
+### 🐈‍⬛ Exercício 07
+<ul>
+  <li>API - Requisição.</li>
+  <li>Manipulação de Array.</li>
+  <li>Animações CSS.</li>
+  <li>Async | Await.</li>
+</ul>
+
+### 🖼️ Exercício 08
+<ul>
+  <li>Promise | Resolve - Reject.</li>
+  <li>FileReader.</li>
+  <li>Try...Catch.</li>
+</ul>
+
+### 🔑 Exercício 09
+<ul>
+  <li>Form JS.</li>
+  <li>Simulação de envio de formulário com setTimeout e Math.random().</li>
+</ul>
