@@ -1,0 +1,33 @@
+:root {
+    --form-background: rgba(0, 0, 0, 0.26);
+    --principal-font: 'NotoSans';
+    --white: rgb(255, 255, 255);
+    --white-rgb: 255, 255, 255;
+    --black-rgb: 0, 0, 0;
+    --button-color: rgb(140, 12, 107);
+    --button-color-rgb: 140, 12, 107;
+    --button-color-ascent: rgb(86, 1, 182);
+}
+
+@font-face {
+    font-family: 'NotoSans';
+    src: url('assets/fonts/notoSans/NotoSans-VariableFont_wdth,wght.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--principal-font);
+    font-size: 18px;
+    color: var(--white);
+    background-image: url('assets/images/background.png');
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 09</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/styles/form.css">
+</head>
+<body>
+
+    <!-- Formulário de Cadastro -->
+    <form class="form" id="form" autocomplete="off">
+        <h1 class="form-title">Dados Cadastrais</h1>
+        <!-- Dados do usuário -->
+        <section class="user-data">
+            
+            <div class="label-div">
+                <label for="name">Nome:</label>
+                <label for="email">Email:</label>
+                <label for="password">Senha:</label>
+            </div>
+            <!-- Nome -->
+            <div class="input-div">
+                <input type="text" id="name" placeholder="Digite seu nome" />
+                <span class="error-message error-name" style="display: none;"></span>
+                <input type="text" id="email" placeholder="seu_email@email.com" />
+                <span class="error-message error-email" style="display: none;"></span>
+                <input type="password" id="password" placeholder="Digite sua senha" />
+                <span class="error-message error-password" style="display: none;"></span>
+            </div>
+
+        </section> <!-- user-data -->
+
+        <!-- Enviar -->
+        <button type="submit" class="submit-button" id="submit">Cadastrar</button>
+
+    </form>
+
+    <!-- Scripts -->
+    <script src="index.js" type="module"></script>
+
+</body>
+</html>
