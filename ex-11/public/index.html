@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 11</title>
+</head>
+<body>
+  
+  <h1>Enviar dados bancários</h1>
+  <!-- Formulário -->
+  <form action="exportAccount.php" method="post">
+    <fieldset>
+      <label for="nameInput">Nome:</label>
+      <input type="text" placeholder="Insira o nome" id="nameInput" name="name" required>
+    </fieldset>
+    
+    <fieldset>
+      <label for="balanceInput">Saldo:</label>
+      <input type="text" placeholder="Informe o saldo" id="balanceInput" name="balance" required>
+    </fieldset>
+
+    <input type="submit" id="submitInput" value="Enviar">
+  </form>
+  
+</body>
+</html>

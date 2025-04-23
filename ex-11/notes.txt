@@ -1,0 +1,5 @@
+Para iniciar o servidor web rode o seguinte comando:
+  php -S localhost:<porta> -t <pasta>
+P.S.: troque <porta> para uma porta de conexão e <pasta> para uma pasta que receberá as requisições.
+Recomendação: <porta>: 8000; <pasta>: public;
+
